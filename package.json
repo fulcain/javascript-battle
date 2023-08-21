@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.66.1"
+  },
+  "name": "javascript-battle",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass -w --no-source-map src/css/index.scss:dist/css/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
