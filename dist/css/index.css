@@ -7,6 +7,12 @@ main #game-box {
   height: 100vh;
   position: relative;
 }
+main #game-box #score {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
 main #game-box #ball {
   position: absolute;
   top: 10px;

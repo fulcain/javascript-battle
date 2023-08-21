@@ -10,6 +10,13 @@ main {
 		height: 100vh;
 		position: relative;
 
+		#score{
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 20px;
+		}
+
 		// Ball styles
 		#ball {
 			position: absolute;

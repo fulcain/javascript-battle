@@ -1,3 +1,10 @@
+// Import incrementScore increment the score by one every time the square collides with a square
+import incrementScore from "./incrementScore.js";
+
+/**
+ * Checks for collisions between the ball and squares, and updates the positions accordingly.
+ * @param {Object} positions - The positions object containing the top and left properties.
+ */
 const checkCollision = (positions) => {
 	// Select ball element
 	const ballEl = document.querySelector("#ball");
@@ -31,6 +38,9 @@ const checkCollision = (positions) => {
 			// Update the positions object
 			positions.top = 10;
 			positions.left = 10;
+
+			// Call the incrementScore function to increase the score
+			incrementScore();
 
 			// Update ball element styles
 			ballEl.style.top = `${positions.top}px`;
