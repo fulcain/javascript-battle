@@ -15,10 +15,14 @@
 // Ball movement helper function which moves the ball location
 import ballMovement from "./js/helpers/ballMovement.js";
 
+// Create square function on mouse1 click helper function
+import createSquare from "./js/helpers/createSquare.js";
+
 // Calls the init function on page load
 window.addEventListener("DOMContentLoaded", init);
 
 // Calls functions that need to be invoked on page load
 function init() {
 	ballMovement();
+    createSquare()
 }
