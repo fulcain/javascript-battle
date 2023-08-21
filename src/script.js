@@ -24,5 +24,5 @@ window.addEventListener("DOMContentLoaded", init);
 // Calls functions that need to be invoked on page load
 function init() {
 	ballMovement();
-    createSquare()
+	createSquare();
 }

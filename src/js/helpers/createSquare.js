@@ -23,7 +23,7 @@ const createSquare = () => {
 				square.style.left === `${posX - 50}px`
 		);
 
-        // If another square with the same position exists, return the function
+		// If another square with the same position exists, return the function
 		if (existingSquare) return;
 
 		// Create square element
