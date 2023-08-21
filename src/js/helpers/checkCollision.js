@@ -1,6 +1,9 @@
 // Import incrementScore increment the score by one every time the square collides with a square
 import incrementScore from "./incrementScore.js";
 
+// Import scoreAlert from silverBox template to show that the score has been added
+import { scoreAlert } from "../templates/silverBox.js";
+
 /**
  * Checks for collisions between the ball and squares, and updates the positions accordingly.
  * @param {Object} positions - The positions object containing the top and left properties.
@@ -41,6 +44,7 @@ const checkCollision = (positions) => {
 
 			// Call the incrementScore function to increase the score
 			incrementScore();
+			silverBox(scoreAlert());
 
 			// Update ball element styles
 			ballEl.style.top = `${positions.top}px`;
