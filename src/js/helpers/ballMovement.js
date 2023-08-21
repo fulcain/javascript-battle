@@ -16,7 +16,7 @@ const ballMovement = () => {
 
 	window.addEventListener("keydown", (e) => {
 		// Move Up
-		if (e.key === "w" || e.key === "ArrowUp") {
+		if (e.code === "KeyW" || e.code === "ArrowUp") {
 			// Update top variable
 			positions.top -= 10;
 
@@ -25,7 +25,7 @@ const ballMovement = () => {
 		}
 
 		// Move Down
-		if (e.key === "s" || e.key === "ArrowDown") {
+		if (e.code === "KeyS" || e.code === "ArrowDown") {
 			// Update top variable
 			positions.top += 10;
 
@@ -34,7 +34,7 @@ const ballMovement = () => {
 		}
 
 		// Move Left
-		if (e.key === "a" || e.key === "ArrowLeft") {
+		if (e.code === "KeyA" || e.code === "ArrowLeft") {
 			// Update left variable
 			positions.left -= 10;
 
@@ -43,7 +43,7 @@ const ballMovement = () => {
 		}
 
 		// Move Right
-		if (e.key === "d" || e.key === "ArrowRight") {
+		if (e.code === "KeyD" || e.code === "ArrowRight") {
 			// Update left variable
 			positions.left += 10;
 
